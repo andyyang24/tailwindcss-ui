@@ -18,7 +18,7 @@ export default function DialogModal() {
       <button
         type="button"
         onClick={openModal}
-        className="px-4 py-2 text-sm font-medium text-gray-800 bg-white rounded-full transit transform duration-200 hover:scale-105 hover:bg-pink-400 hover:text-white focus:outline-none focus-visible:ring-2 focus-visible:ring-white focus-visible:ring-opacity-75"
+        className="transition transform duration-200 px-4 py-2 w-44 text-sm font-medium text-gray-800 bg-white rounded-full hover:bg-pink-400 hover:text-white hover:scale-105 focus:outline-none focus-visible:ring-2 focus-visible:ring-white focus-visible:ring-opacity-75"
       >
         Open Dialog
       </button>
@@ -63,12 +63,12 @@ export default function DialogModal() {
                   as="h3"
                   className="text-lg font-medium leading-6 text-gray-900"
                 >
-                  Payment Successful!
+                  G'day & Welcome~
                 </Dialog.Title>
                 <div className="mt-2">
                   <p className="text-sm text-gray-500">
-                    Your payment has been successfully submitted. We’ve sent
-                    your an email with all of the details of your order.
+                    This is made for building & testing of Headless UI (React,
+                    Next.js) components.
                   </p>
                 </div>
 
@@ -78,7 +78,7 @@ export default function DialogModal() {
                     className="inline-flex justify-center px-4 py-2 text-sm font-medium text-blue-900 bg-blue-200 border border-transparent rounded-full transit transform duration-200 hover:scale-105 hover:bg-blue-600 hover:text-white focus:outline-none focus-visible:ring-2 focus-visible:ring-offset-2 focus-visible:ring-blue-500"
                     onClick={closeModal}
                   >
-                    Continue Shopping
+                    Continue
                   </button>
                 </div>
               </div>

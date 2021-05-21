@@ -3,7 +3,7 @@ import { Listbox, Transition } from "@headlessui/react";
 import { CheckIcon, SelectorIcon } from "@heroicons/react/solid";
 
 const people = [
-  { id: 1, name: "- Select -", unavailable: false },
+  { id: 1, name: "- Select Name -", unavailable: false },
   { id: 2, name: "Kenton Towne", unavailable: false },
   { id: 3, name: "Therese Wunsch", unavailable: false },
   { id: 4, name: "Benedict (unavailable)", unavailable: true },
@@ -26,7 +26,7 @@ export default function SelectListbox() {
         <Listbox.Label className="block m-6 text-gray-50 text-lg">
           Select Listbox
         </Listbox.Label>
-        <Listbox.Button className="relative w-44 py-2 pl-3 pr-10 cursor-pointer text-left bg-white rounded-full shadow-md cursor-default transite transform duration-200 hover:scale-105 hover:bg-pink-400 hover:text-white active:bg-pink-400 group-hover:bg-pink-400 group-hover:text-white focus:outline-none text-sm">
+        <Listbox.Button className="transition transform duration-200 cursor-pointer relative w-44 py-2 pl-3 pr-10 text-left text-sm bg-white rounded-full shadow-md hover:bg-pink-400 hover:scale-105 hover:text-white group-hover:bg-pink-400 group-hover:text-white group-hover:scale-105 focus:outline-none focus-visible:ring-2 focus-visible:ring-opacity-75 focus-visible:ring-white focus-visible:ring-offset-orange-300 focus-visible:ring-offset-2 focus-visible:border-indigo-500">
           <span className="block text-center font-medium">{selected.name}</span>
           <span className="absolute inset-y-0 right-0 flex items-center pr-2 pointer-events-none">
             <SelectorIcon

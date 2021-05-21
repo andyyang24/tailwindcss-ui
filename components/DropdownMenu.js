@@ -8,8 +8,8 @@ export default function DropdownMenu() {
       <h2 className="block m-6 text-white text-lg">Dropdown Menu</h2>
       <Menu as="div" className="group relative inline-block text-center">
         <div>
-          <Menu.Button className="inline-flex shadow-md justify-center w-44 px-4 py-2 my-1 text-sm font-medium rounded-full transite transform duration-200 text-gray-800 bg-white hover:bg-pink-400 hover:text-white hover:scale-105 group-hover:bg-pink-400 group-hover:text-white focus:outline-none">
-            Find Actions
+          <Menu.Button className="transition transform duration-200 inline-flex justify-center w-44 px-4 py-2 mb-1 text-sm font-medium text-gray-800 bg-white rounded-full hover:scale-105  hover:text-white hover:bg-pink-400 group-hover:text-white group-hover:bg-pink-400 group-hover:scale-105 focus:outline-none focus-visible:ring-2 focus-visible:ring-white focus-visible:ring-opacity-75">
+            Action Menu
             <ChevronDownIcon
               className="w-5 h-5 ml-2 -mr-1 text-gray-800 group-hover:text-white"
               aria-hidden="true"
@@ -54,7 +54,7 @@ export default function DropdownMenu() {
                   <button
                     className={`${
                       active ? "bg-pink-400 text-white" : "text-gray-800"
-                    } group flex rounded-full items-center w-full px-2 py-2 text-sm transite transform duration-200 hover:scale-105  focus:outline-none`}
+                    } group flex rounded-full items-center w-full px-2 py-2 text-sm transite transform duration-200 hover:scale-105 focus:outline-none`}
                   >
                     {active ? (
                       <DuplicateActiveIcon
@@ -102,7 +102,7 @@ export default function DropdownMenu() {
                       active
                         ? "bg-pink-400 text-white hover:bg-pink-400"
                         : "text-gray-800"
-                    } group flex rounded-full items-center w-full px-2 py-2 text-sm transite transform duration-200 hover:scale-105  focus:outline-none`}
+                    } group flex rounded-full items-center w-full px-2 py-2 text-sm transite transform duration-200 hover:scale-105 focus:outline-none`}
                   >
                     {active ? (
                       <MoveActiveIcon
