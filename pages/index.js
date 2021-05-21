@@ -22,8 +22,7 @@ export default function Home() {
           <span className="text-3xl">with React (Next.js)</span>
         </h1>
         <p className="">
-          Completely unstyled, fully accessible UI components, designed to
-          integrate beautifully with Tailwind CSS.
+          Utilise Tailwind CSS & Headless UI to build React componnents for Next.js.
         </p>
 
         <div className="pb-12 m-6 flex flex-col items-center justify-center border-b border-dotted	">
